@@ -273,4 +273,237 @@ html {
 
 .bottom {
   background-color: #03071e;
+}
+
+.products {
+  width: 100%;
+  height: 100%;
+  background: #001219;
+  color: #fff;
+}
+.products h3 {
+  text-align: center;
+  font-family: "Playfair", serif;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.parte1 {
+  margin: 0 10rem 1rem 10rem;
+}
+.parte1 .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.parte1 .menu li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.parte1 .menu li:hover {
+  color: #7f4f24;
+  transition: all 0.3s ease;
+}
+.parte1 .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -2rem;
+}
+
+.box {
+  padding: 2rem 1rem;
+}
+.box img {
+  width: 8rem;
+  height: 12rem;
+}
+.box .info {
+  height: 5rem;
+}
+.box .info h5 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.6rem 0;
+  text-align: left;
+  margin-bottom: -0.7rem;
+}
+.box .info .price {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #7f4f24;
+}
+.box .info .butts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  visibility: none;
+}
+.box .info .butts:hover {
+  visibility: visible;
+}
+.box .info .butts .prod-btn {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
+  border: 1px solid gray;
+  padding: 0.4rem 0.3rem;
+}
+.box .info .butts .prod-btn span {
+  padding-left: 0.2rem;
+}
+.box .info .butts .prod-btn :hover {
+  font-size: 0.65rem;
+  transition: all 0.3s ease;
+}
+
+.banner {
+  width: 100%;
+  height: 35vh;
+  background: url(../resources/images/banner5.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.banner h3 {
+  text-align: left;
+  padding-left: 17rem;
+  margin-bottom: -1rem;
+}
+.banner .dash {
+  margin: 0 0 1rem 20rem;
+  height: 0.2rem;
+  width: 4rem;
+  background-color: gray;
+}
+.banner p {
+  text-align: center;
+  margin-left: 14rem;
+  width: 30rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.banner .play {
+  margin-left: 19rem;
+  padding: 1rem 0 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.banner .play #icon {
+  font-size: 2rem;
+  background-color: #7f4f24;
+  border-radius: 50%;
+}
+.banner .play span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.count {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  background-color: #000102;
+}
+.count h4 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  z-index: 1;
+  font-weight: bolder;
+  font-size: 10rem;
+  opacity: 0.1;
+  text-transform: uppercase;
+}
+.count .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 99;
+}
+.count .content .left {
+  text-align: center;
+  margin-top: 4rem;
+}
+.count .content .left h5 {
+  color: #7f4f24;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+.count .content .left h2 {
+  font-family: "Playfair", serif;
+  font-size: 3rem;
+  width: 20rem;
+  font-weight: normal;
+}
+.count .content .left .dash {
+  height: 0.2rem;
+  width: 4rem;
+  background-color: gray;
+  margin: 0.5rem 0 1rem 8rem;
+}
+.count .content .center {
+  width: 12rem;
+  height: 100%;
+  margin-top: 2rem;
+}
+.count .content .center img {
+  width: 12rem;
+  height: -moz-min-content;
+  height: min-content;
+  z-index: 99;
+}
+.count .content .right h3 {
+  font-size: 1.2rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+}
+.count .content .right h3 del {
+  color: #7f4f24;
+}
+.count .content .right .hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.count .content .right .hours .line {
+  height: 1.5rem;
+  width: 0.2rem;
+  background-color: gray;
+  margin: 0 1rem;
+}
+.count .content .right .hours span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.count .content .right .hours span h5 {
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+.count .content .right .count-btn {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #7f4f24;
+  margin: 1rem 0 0 2rem;
+  cursor: pointer;
+  display: inline-flex;
+}
+.count .content .right .count-btn:hover {
+  gap: 0.4rem;
 }/*# sourceMappingURL=app.css.map */

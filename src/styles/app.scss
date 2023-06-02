@@ -322,3 +322,284 @@ html{
 .bottom{
     background-color: $colorblack;
 }
+
+.products{
+    width: 100%;
+    height: 100%;
+    background: $colorblacker;
+    color: #fff;
+    
+    h3{
+        text-align: center;
+        font-family: $fontheading;
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+.parte1{
+    margin: 0 10rem 1rem 10rem;
+    // border: 1px solid white;
+
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+
+        li{
+            list-style: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover{
+                color: $colorbrown;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    .gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: -2rem;
+    }
+}
+
+.box{
+    // width: 20%;
+    // height: 7rem;
+    padding: 2rem 1rem;
+    
+
+    img{
+        width: 8rem;
+        height: 12rem;
+        // border: 1px solid red;
+    }
+
+    .info{
+        height: 5rem;
+        h5{
+            font-size: .7rem;
+            font-weight: 600;
+            padding: .6rem 0;
+            text-align: left;
+            margin-bottom: -.7rem;
+        }
+
+        .price{
+            font-size: .6rem;
+            font-weight: 600;
+            color: $colorbrown;
+            // margin-top: -2rem;
+
+        }
+
+        .butts{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            visibility: none;
+
+            &:hover{
+                visibility: visible;
+            }
+
+            .prod-btn{
+                font-size: .6rem;
+                font-weight: bold;
+                color: #fff;
+                background: transparent;
+                border: 1px solid gray;
+                padding: .4rem .3rem ;
+                span{
+                    padding-left: .2rem;
+                }
+
+                :hover{
+                    font-size: .65rem;
+                    transition: all .3s ease;
+                }
+            }
+
+        }
+
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 35vh;
+    background: url(../resources/images/banner5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    h3{
+        text-align: left;
+        padding-left: 17rem;
+        margin-bottom: -1rem;
+    }
+
+    .dash{
+        margin: 0 0 1rem 20rem;
+        height: .2rem;
+        width: 4rem;
+        background-color: gray;
+    }
+    p{
+        text-align: center;
+        margin-left: 14rem;
+        width: 30rem;
+        font-weight: 600;
+        font-size: .8rem;
+    }
+    .play{
+        margin-left: 19rem;
+        padding: 1rem 0 0 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+
+        #icon{
+            font-size: 2rem;
+            background-color: #7f4f24;
+            border-radius: 50%;
+        }
+
+        span{
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.count{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    background-color: #000102;
+    // border: 1px solid white;
+
+    h4{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        z-index: 1;
+        font-weight: bolder;
+        font-size: 10rem;
+        opacity: .1;
+        text-transform: uppercase;
+        // transform: translate(-50% -50%);
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        z-index: 99;
+
+        .left{
+            // border:  1px solid red;
+            text-align: center;
+            margin-top: 4rem;
+
+            h5{
+                color: #7f4f24;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+            h2{
+                font-family: $fontheading;
+                font-size: 3rem;
+                width: 20rem;
+                font-weight: normal;
+            }
+            .dash{
+                height: .2rem;
+                width: 4rem;
+                background-color: gray;
+                margin: .5rem 0 1rem 8rem;
+            }
+        }
+
+        .center{
+            width: 12rem;
+            height: 100%;
+            // border: 1px solid white;
+            margin-top: 2rem;
+
+            img{
+                width: 12rem;
+                height: min-content;
+                z-index: 99;
+            }
+        }
+
+        .right{
+            
+            h3{
+                font-size: 1.2rem;
+                font-family: $fontbody;
+                font-weight: 600;
+
+                del{
+                    color: $colorbrown;
+                }
+            }
+            .hours{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem ;
+
+                .line{
+                    height: 1.5rem;
+                    width: .2rem;
+                    background-color: gray;
+                    margin: 0 1rem;
+                }
+
+                span{
+                    font-size: .8rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    h5{
+                        font-size: 2rem;
+                        margin-bottom: -1rem;
+                    }
+                }
+            }
+
+            .count-btn{
+                font-size: .8rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                border: none;
+                background: transparent;
+                color: #7f4f24;
+                margin: 1rem 0 0 2rem;
+                cursor: pointer;
+                // width: rem;
+                display: inline-flex;
+
+                &:hover{
+                    gap: .4rem;
+                }
+
+                
+            }
+        }
+    }
+}
