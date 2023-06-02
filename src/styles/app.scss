@@ -241,7 +241,7 @@ html{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin: 2rem  4rem;
+    margin: 3rem  4rem;
     // width: 70%;
     // border: 1px solid  white; debbugging
 }
@@ -304,10 +304,12 @@ html{
 
 .list{
     // gap: 2rem;
+    padding-bottom: .2rem;
     padding-left: 1rem;
     .ion{
         font-size: 1rem;
         padding-right: .5rem;
+        
     }
     span{
         font-size: .9rem;

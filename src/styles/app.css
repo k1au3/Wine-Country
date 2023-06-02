@@ -199,7 +199,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin: 2rem 4rem;
+  margin: 3rem 4rem;
 }
 
 .container {
@@ -255,6 +255,7 @@ html {
 }
 
 .list {
+  padding-bottom: 0.2rem;
   padding-left: 1rem;
 }
 .list .ion {
