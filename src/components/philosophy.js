@@ -15,7 +15,7 @@ function Icon({source, title}) {
         <div className="icon">
                 <img src={source} alt="icon"></img>
                 <h4>{title}</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus veniam nemo, praesentium optio hic vel earum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
     );
 }
