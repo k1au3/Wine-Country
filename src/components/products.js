@@ -1,6 +1,11 @@
 import { IonIcon } from "@ionic/react";
 import { Button } from "./hero";
-import { bagOutline, playBackCircleOutline, eyeOutline } from "ionicons/icons";
+import { arrowForward, bagOutline, eyeOutline, playCircleOutline } from "ionicons/icons";
+import product1 from '../resources/images/prod/p1.webp';
+import product2 from '../resources/images/prod/p2.webp';
+import product3 from '../resources/images/prod/p3.webp';
+import product4 from '../resources/images/prod/p7.webp';
+import wrapped from '../resources/images/prod/wr2.jpg'
 
 
 
@@ -13,14 +18,14 @@ function Product({source, altt, title, price}) {
             <img src={source} alt={altt} />
             <div className="info">
                 <h5>{title}</h5>
-                <span>{price}</span>
+                <span className="price">{price}</span>
 
                 <div className="butts">
-                    < Button className="btn">
+                    < Button className="prod-btn">
                         <IonIcon icon={eyeOutline} />
                         <span>Quick View</span>
                     </Button>
-                    <Button className="btn">
+                    <Button className=" prod-btn">
                         <IonIcon icon={bagOutline} />
                         <span>Add To Cart</span>
                     </Button>
@@ -41,10 +46,10 @@ function Gallery() {
             </ul>
 
             <div className="gallery">
-            <Product source="" altt="riosling" title="Riosling" price="Ksh 7,000" />
-            <Product source="" altt="Pinot" title="Pinot Noir" price="Ksh 10,800" />
-            <Product source="" altt="Pinot" title="Pinot Gridio" price="Ksh 9,300" />
-            <Product source="" altt="marlot" title="Marlot" price="Ksh 11,800" />
+            <Product source={product1} altt="riosling" title="Riosling" price="Ksh 7,000" />
+            <Product source={product2} altt="Pinot" title="Pinot Noir" price="Ksh 10,800" />
+            <Product source={product3} altt="Pinot" title="Pinot Gridio" price="Ksh 9,300" />
+            <Product source={product4} altt="marlot" title="Marlot" price="Ksh 11,800" />
             </div>
         </div>
 
@@ -64,7 +69,7 @@ function Gallery() {
                     When you first start smelling wine, think big to small. Are there fruits? Think of broad categories first, i.e citrus, orchard or tropical fruits in whites or, when tasting reds, red fruits, blue fruits, or black fruits.
                 </p>
                 <div className="play">
-                    <IonIcon icon={playBackCircleOutline} />
+                    <IonIcon id="icon" icon={playCircleOutline} />
                     <span>video showcase 03:40</span>
                 </div>
             </div>
@@ -86,17 +91,19 @@ function Countdown() {
                 </div>
 
                 <div className="center">
-                    <img src="" alt="wrapped" />
+                    <img src={wrapped} alt="wrapped" />
                 </div>
 
                 <div className="right">
-                    <h3><span>Ksh 12,400</span> Ksh 10,800</h3>
+                    <h3><del>Ksh12,400</del> Ksh10,800</h3>
                     <div className="hours">
-                        <span>69 <br /> hours</span>
-                        <span>44 <br /> minutes</span>
-                        <span>28 <br />seconds</span>
+                        <span><h5>69</h5> <br /> hours <br /></span>
+                        <div className="line"></div>
+                        <span><h5>44</h5><br /> minutes <br /></span>
+                        <div className="line"></div>
+                        <span><h5>28</h5> <br />seconds <br /></span>
                     </div>
-                    <button className="count-btn">shop now</button>
+                    <button className="count-btn">shop now <IonIcon icon={arrowForward} /></button>
                 </div>
             </div>
         </div>
