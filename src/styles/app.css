@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 html {
@@ -506,4 +507,119 @@ html {
 }
 .count .content .right .count-btn:hover {
   gap: 0.4rem;
+}
+
+.review {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #000102;
+}
+.review .image {
+  width: 50%;
+  background: url(../resources/images/dr4.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.review .float__right {
+  padding-left: 10rem;
+  position: relative;
+  text-align: right;
+  padding-right: 1rem;
+}
+.review .float__right h3 {
+  font-size: 1.3rem;
+  text-align: right;
+}
+.review .float__right .info img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.review .float__right .info h3 {
+  color: #7f4f24;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.review .float__right .info h5 {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: -2rem;
+}
+.review .float__right .info p {
+  width: 20rem;
+  padding: 1rem 0;
+}
+.review .float__right .navigation {
+  font-size: 1.7rem;
+  color: #7f4f24;
+  margin: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.review .float__right .navigation:hover {
+  color: #422104;
+  transition: all 0.3s ease;
+}
+
+/* blog & footer page */
+.last__part {
+  height: 100%;
+  width: 100%;
+  background-color: #001219;
+  color: #fff;
+}
+
+.blogs {
+  padding: 2rem;
+  position: relative;
+}
+.blogs h2 {
+  text-align: center;
+  font-family: "Playfair", serif;
+  font-size: 2rem;
+}
+.blogs .blog__gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.blogs .dash {
+  position: absolute;
+  width: 70vw;
+  height: 0.1rem;
+  background-color: #2b2d42;
+  margin: 2rem 10rem;
+}
+
+.blog {
+  margin-top: 1.4rem;
+  height: 18rem;
+  width: 12rem;
+}
+.blog img {
+  width: 100%;
+  height: 13rem;
+}
+.blog .content {
+  padding: 0.5rem 0;
+}
+.blog .content :nth-child(1) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.blog .content :nth-child(2) {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding-top: 0.3rem;
+  opacity: 0.5;
 }/*# sourceMappingURL=app.css.map */

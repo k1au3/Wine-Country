@@ -1,11 +1,13 @@
 import { IonIcon } from "@ionic/react";
 import { Button } from "./hero";
-import { arrowForward, bagOutline, eyeOutline, playCircleOutline } from "ionicons/icons";
+import { arrowForward, bagOutline, caretForwardOutline, eyeOutline, playCircleOutline } from "ionicons/icons";
 import product1 from '../resources/images/prod/p1.webp';
 import product2 from '../resources/images/prod/p2.webp';
 import product3 from '../resources/images/prod/p3.webp';
 import product4 from '../resources/images/prod/p7.webp';
-import wrapped from '../resources/images/prod/wr2.jpg'
+import wrapped from '../resources/images/prod/wr2.jpg';
+import React, {useState} from "react";
+// import sip from '../resources/images/drink.webp'
 
 
 
@@ -113,7 +115,9 @@ function Countdown() {
 
 /*part4 */
 
-function Review() {
+
+
+function Reviews() {
     const people = [
         {
             id: 1,
@@ -133,34 +137,33 @@ function Review() {
             location: 'Thika, Nairobi',
             source: ''
         }
-    ]
+    ];
+    const[currentReview, setCurrentReview] =useState(0);
+    const handleNextReview =() => {
+        setCurrentReview(currentReview === people.length -1 ? 0 : currentReview + 1);
+    };
+    const {name, location, source } = people[currentReview];
     return(
         <div className="review">
             
-            {people.map(person =>
-                <div className="info" key={person.id}>
-                    <img src={person.source} alt={person.name} />
-                    <h3>{person.name}</h3>
-                    <h5>{person.location}</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, iste. Commodi voluptatem</p>
-                </div>
-            )}
-        </div>
-    );
-}
-
-function Reviews() {
-    return(
-        <div className="reviews">
-            <img src="" alt="sipping wine" />
             <div className="float__right">
-                <h3>What Get People Saying</h3>
-                <Review />
-                <button className="navigation"></button>
+                <h3>What people are saying</h3>
+                <div className="info">
+                    <img src={source} alt={name} />
+                    <h3>{name}</h3>
+                    <h5>{location}</h5>
+                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, iste. Commodi voluptatem"</p>
+                </div>
+                <button className="navigation" onClick={handleNextReview}><IonIcon icon={caretForwardOutline} /></button>
+            </div>
+            <div className="image">
+            {/* <img src={sip} alt="sippwine" /> */}
             </div>
         </div>
     );
 }
+
+
 
 
 

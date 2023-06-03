@@ -3,6 +3,11 @@
 
 import { IonIcon } from "@ionic/react";
 import { arrowUp, logoFacebook, logoGoogle, logoInstagram, logoTwitter, logoYoutube } from "ionicons/icons";
+import blog1 from '../resources/images/blog1.jpg';
+import blog2 from '../resources/images/blog2.jpg';
+import blog3 from '../resources/images/blog3.webp';
+// import blog4 from '../resources/images/blog4.avif';
+import blog5 from '../resources/images/blog5.webp'
 
 
 function Blog({source, blogTitle, date}){
@@ -10,7 +15,7 @@ function Blog({source, blogTitle, date}){
         <div className="blog">
             <img src={source} alt="blog" />
             <div className="content">
-                <span>{blogTitle}</span>
+                <p>{blogTitle}</p>
                 <span>{date}</span>
             </div>
         </div>
@@ -20,11 +25,14 @@ function Blogs(){
     return(
         <div className="blogs">
             <h2>Wize Blog</h2>
+            {/* <div className="dashh"></div> */}
+            <div className="blog__gallery">
+                <Blog source={blog1} blogTitle="The Process Behind Our Award-Winning Wines" date="January 16 2023" />
+                <Blog  source={blog2} blogTitle="Varietal Labelling of New World Wines"  date="March 10 2023" />
+                <Blog  source={blog3} blogTitle="Daily Wines News in Favour of Reds"  date="March 23 2023" />
+                <Blog  source={blog5} blogTitle="Good Wine Comes to those who Wait"  date="May 10 2023" />
+            </div>
             <div className="dash"></div>
-            <Blog source="" blogTitle="The Process Behind Our Award-Winning Wines" date="January 16 2023" />
-            <Blog  source=""  blogTitle="Varietal Labelling of New World Wines"  date="March 10 2023" />
-            <Blog  source=""  blogTitle="Daily Wines News in Favour of Reds"  date="March 23 2023" />
-            <Blog  source=""  blogTitle="Good Wine Comes to those who Wait"  date="May 10 2023" />
         </div>
     );
 }
