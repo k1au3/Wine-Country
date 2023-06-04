@@ -1,7 +1,7 @@
 # wiz winery
-##f rontend design for a winery store, functionality to be implemented
+## frontend design for a winery store, functionality to be implemented
 
-###design inspo
+### design inspo
 [![readmeimg](readme.jpg)](/src/resources/readme-img/readme.jpg)
 
 
