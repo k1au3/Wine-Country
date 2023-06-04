@@ -1,3 +1,10 @@
+#wiz winery
+##frontend design for a winery store, functionality to be implemented
+
+###design inspo
+[![readmeimg](readme.jpg)](/src/resources/readme-img/readme.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

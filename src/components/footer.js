@@ -2,12 +2,16 @@
 /* Blog */
 
 import { IonIcon } from "@ionic/react";
-import { arrowUp, logoFacebook, logoGoogle, logoInstagram, logoTwitter, logoYoutube } from "ionicons/icons";
+import { arrowUp, logoFacebook, logoGoogle, logoInstagram, logoTwitter, logoYoutube, refreshCircleOutline } from "ionicons/icons";
 import blog1 from '../resources/images/blog1.jpg';
 import blog2 from '../resources/images/blog2.jpg';
 import blog3 from '../resources/images/blog3.webp';
 // import blog4 from '../resources/images/blog4.avif';
-import blog5 from '../resources/images/blog5.webp'
+import blog5 from '../resources/images/blog5.webp';
+import card1 from '../resources/images/icons/credit-card.png';
+// import card2 from '../resources/images/icons/cryptowallet.png';
+// import card3 from '../resources/images/icons/money.png';
+import card4 from '../resources/images/icons/visa.png'
 
 
 function Blog({source, blogTitle, date}){
@@ -28,9 +32,9 @@ function Blogs(){
             {/* <div className="dashh"></div> */}
             <div className="blog__gallery">
                 <Blog source={blog1} blogTitle="The Process Behind Our Award-Winning Wines" date="January 16 2023" />
-                <Blog  source={blog2} blogTitle="Varietal Labelling of New World Wines"  date="March 10 2023" />
-                <Blog  source={blog3} blogTitle="Daily Wines News in Favour of Reds"  date="March 23 2023" />
-                <Blog  source={blog5} blogTitle="Good Wine Comes to those who Wait"  date="May 10 2023" />
+                <Blog  source={blog3} blogTitle="Varietal Labelling of New World Wines"  date="March 10 2023" />
+                <Blog  source={blog5} blogTitle="Daily Wines News in Favour of Reds"  date="March 23 2023" />
+                <Blog  source={blog2} blogTitle="Good Wine Comes to those who Wait"  date="May 10 2023" />
             </div>
             <div className="dash"></div>
         </div>
@@ -46,7 +50,11 @@ function Newsletter() {
             <h3>Subscribe for newsletter</h3>
             <span>Get updates by subscribing to our weekly newsletter ro receive the lates news, events & promotions</span>
             <div className="input">
-                <input type="text" />  {/*look into it */}
+                <form action="/subscribe" method="POST">
+                    {/* <label for="email">Email:</label> */}
+                    <input type="email" id="email" name="Enter your email" required />
+                    <button className="btn" type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     );
@@ -61,7 +69,7 @@ function Foot(){
             <button className="foot-bt">
                 <a href="#top" className="to-top">
                     <IonIcon icon={arrowUp} />
-                    <span>Back to Top</span>
+                    <h5>Back to Top</h5>
                 </a>
             </button>
             <div className="dash"></div>
@@ -90,7 +98,7 @@ function Foot(){
                         <IonIcon icon={logoYoutube} />
                         <IonIcon icon={logoInstagram} />
                     </div>
-                    <span> &copy 2023 WIZE. All rights reserved</span>
+                    <h5> <IonIcon icon={refreshCircleOutline} /> 2023 WIZE. All rights reserved</h5>
                 </div>
 
                 <div className="location">
@@ -100,14 +108,14 @@ function Foot(){
 
                 <div className="hotline">
                     <h4>24/7 hotline</h4>
-                    (254)12 345 678
+                    <span>(254)12 345 678</span>
                 </div>
 
                 <div className="cards">
-                    <img src="" alt="card" />
-                    <img src="" alt="card" />
-                    <img src="" alt="card" />
-                    <img src="" alt="card" />
+                    <img src={card1} alt="card" />
+                    <img src={card4} alt="card" />
+                    <img src={card1} alt="card" />
+                    <img src={card4} alt="card" />
                 </div>
             </div>
         </div>

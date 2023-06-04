@@ -45,7 +45,7 @@ const Hero = () => {
     return ( 
         <div className="main">
             <Nav />
-            <div className="hero">
+            <div className="hero" id="top">
                 <span>Excelent Wine Collection</span>
                 <h1>The Wine Country</h1>
                 <div className="line-para">

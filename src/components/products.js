@@ -7,7 +7,10 @@ import product3 from '../resources/images/prod/p3.webp';
 import product4 from '../resources/images/prod/p7.webp';
 import wrapped from '../resources/images/prod/wr2.jpg';
 import React, {useState} from "react";
-// import sip from '../resources/images/drink.webp'
+import customer1 from '../resources/images/customer.jpeg';
+import customer2 from '../resources/images/customer2.jpg';
+import customer3 from '../resources/images/customer3.webp'
+
 
 
 
@@ -123,19 +126,19 @@ function Reviews() {
             id: 1,
             name: 'Mike Oduor',
             location: 'Kitengela, Nairobi',
-            source:''
+            source:customer1
         },
         {
             id: 2,
             name: 'Kiplagat John',
             location: 'Nakuru',
-            source: ''
+            source: customer2
         },
         {
             id: 3,
             name: 'Mercy Mwaniki',
             location: 'Thika, Nairobi',
-            source: ''
+            source: customer3
         }
     ];
     const[currentReview, setCurrentReview] =useState(0);

@@ -24,6 +24,7 @@ html {
   text-transform: uppercase;
   font-size: 1rem;
   margin: 1rem;
+  color: #fff;
 }
 .btn:hover {
   transition: all 0.3s ease;
@@ -354,12 +355,13 @@ html {
   background: transparent;
   border: 1px solid gray;
   padding: 0.4rem 0.3rem;
+  cursor: pointer;
 }
 .box .info .butts .prod-btn span {
   padding-left: 0.2rem;
 }
 .box .info .butts .prod-btn :hover {
-  font-size: 0.65rem;
+  font-size: 0.63rem;
   transition: all 0.3s ease;
 }
 
@@ -401,6 +403,7 @@ html {
   font-size: 2rem;
   background-color: #7f4f24;
   border-radius: 50%;
+  cursor: pointer;
 }
 .banner .play span {
   font-size: 0.7rem;
@@ -515,7 +518,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #000102;
+  background-color: #000a14;
 }
 .review .image {
   width: 50%;
@@ -536,8 +539,8 @@ html {
   text-align: right;
 }
 .review .float__right .info img {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
 }
 .review .float__right .info h3 {
@@ -555,6 +558,7 @@ html {
 .review .float__right .info p {
   width: 20rem;
   padding: 1rem 0;
+  font-size: 0.8rem;
 }
 .review .float__right .navigation {
   font-size: 1.7rem;
@@ -622,4 +626,160 @@ html {
   font-weight: bold;
   padding-top: 0.3rem;
   opacity: 0.5;
+}
+
+.newsletter {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.newsletter h3 {
+  font-family: "Playfair", serif;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.newsletter span {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.newsletter .input {
+  padding: 1rem 0;
+}
+.newsletter .input #email {
+  padding: 0.6rem 7rem;
+  background: #1b263b;
+  border: none;
+  color: #fff;
+}
+.newsletter .input button {
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.foot .foot-bt {
+  margin: 1rem 0;
+  border: none;
+  background: transparent;
+}
+.foot .foot-bt a {
+  text-decoration: none;
+  color: #fff;
+}
+.foot .foot-bt a h5 {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.foot .foot-bt a h5:hover {
+  padding-top: 0.3rem;
+}
+.foot .dash {
+  width: 100%;
+  height: 0.2rem;
+  margin: 0 5rem;
+  background-color: #1b263b;
+}
+.foot ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.foot ul li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.foot ul li:hover {
+  color: #7f4f24;
+  transition: all 0.2s ease;
+}
+.foot .furthest__end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 0;
+  gap: 2.9rem;
+}
+.foot .furthest__end .logo {
+  text-align: center;
+  text-transform: uppercase;
+}
+.foot .furthest__end .logo h2 {
+  font-family: "Playfair", serif;
+  font-size: 2rem;
+  margin-bottom: -0.7rem;
+}
+.foot .furthest__end .logo span {
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-size: 0.6rem;
+}
+.foot .furthest__end .social {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.foot .furthest__end .social .icons {
+  padding: 0.6rem;
+  margin: -0.3rem;
+}
+.foot .furthest__end .social h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.foot .furthest__end .social h5 IonIcon {
+  font-size: 1rem;
+}
+.foot .furthest__end .location {
+  font-weight: 600;
+}
+.foot .furthest__end .location h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-bottom: 0.2rem;
+}
+.foot .furthest__end .location span {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.foot .furthest__end .hotline {
+  font-weight: 600;
+}
+.foot .furthest__end .hotline h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-bottom: 0.2rem;
+}
+.foot .furthest__end .hotline span {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.foot .furthest__end .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.foot .furthest__end .cards :nth-child(2), .foot .furthest__end .cards :nth-child(3) {
+  color: #7f4f24;
+}
+.foot .furthest__end .cards img {
+  height: 2rem;
+  width: auto;
 }/*# sourceMappingURL=app.css.map */
